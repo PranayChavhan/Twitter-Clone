@@ -15,7 +15,7 @@ import {
 
 const Sidebar = () => {
   return (
-    <div className="hidden sm:flex flex-col items-center xl:items-start xl:w-[340px] p-2 fixed h-full text-white">
+    <div className="hidden md:-ml-5 sm:flex flex-col items-center xl:items-start xl:w-[340px] p-2 fixed h-full text-white">
       <div className="flex items-center justify-center w-14 h-14 hoverAnimation p-0 xl:ml-24">
         <Image src={twitterIcon} width={30} height={30} />
       </div>
@@ -35,18 +35,17 @@ const Sidebar = () => {
         Tweet
       </button>
 
-      <div
-        className="text-[#d9d9d9] flex items-center justify-center mt-auto hoverAnimation xl:ml-auto xl: -mr-10">
+      <div className="text-[#d9d9d9] flex items-center  mt-auto hoverAnimation xl:ml-auto">
         <img
           src="https://www.bootdey.com/img/Content/avatar/avatar7.png"
           alt=""
-          className="h-8 w-8 rounded-full xl:mr-2.5"
+          className="h-8 w-8 ml-3 rounded-full xl:mr-2.5 flex items-center justify-center"
         />
         <div className="hidden xl:inline leading-8">
           <h4 className="font-bold text-sm">pranay</h4>
           <p className="text-[#6e767d] text-sm">@pranaychavhan</p>
         </div>
-        <DotsHorizontalIcon className="h-5 hidden xl:inline ml-20" />
+        <DotsHorizontalIcon className="h-5 hidden xl:inline ml-10" />
       </div>
     </div>
   );
